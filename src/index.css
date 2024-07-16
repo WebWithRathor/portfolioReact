@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar{
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#7776BC;
+    border-radius: 70px;
+}
+
+@font-face {
+    font-family: Melodrama;
+    src: url('./assets/fonts/Melodrama-Variable.ttf');
+}
+
+@font-face {
+    font-family: ClashDisplay;
+    src: url('./assets/fonts/ClashDisplay-Variable.ttf');
+}
