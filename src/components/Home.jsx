@@ -1,9 +1,16 @@
 import React from 'react'
+import Homepage from './Homepage'
+import Nav from './Nav'
+import SkillsPage from './SkillsPage'
+import ProjectPage from './ProjectPage'
 
 const Home = () => {
   return (
-    <div className='flex items-center justify-center bg-black'>
-      <h1 className='text-lg font-semibold text-white'>My Portfolio</h1>
+    <div className='flex font-[ClashDisplay] h-screen overflow-x-auto overflow-hidden items-center text-zinc-700 bg-gradient-to-b from-[#EDE9C9] to-white'>
+      <Nav/>
+      <Homepage/>
+      <SkillsPage/>
+      <ProjectPage/>
     </div>
   )
 }
