@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar{
-    height: 5px;
-}
-::-webkit-scrollbar-thumb{
-    background-color:#7776BC;
-    border-radius: 70px;
+    display: none;
 }
 
 @font-face {
