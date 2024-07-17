@@ -2,11 +2,11 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div className='h-full w-[5vw] sticky left-0 flex flex-col gap-10 text-2xl  justify-center items-center text-white z-[999] shrink-0 bg-[#6968B5] p-5'>
-        <i class="fa-solid fa-circle-user"></i>
-        <i class="fa-solid fa-gears"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
+    <div className='h-full w-[7vw] pointer-events-none fixed left-0 z-[999] shrink-0 pt-6 px-5'>
+        <div className="menu w-full pointer-events-auto aspect-square cursor-pointer group flex flex-col items-center justify-center gap-1.5">
+          <div  className="line origin-center group-hover:rotate-45 group-hover:translate-y-1 transition-transform w-10 h-0.5 bg-[#6866B5]"></div>
+          <div  className="line w-10 origin-center group-hover:-rotate-45 group-hover:-translate-y-1 transition-transform h-0.5  bg-[#6866B5]"></div>
+        </div>
     </div>
   )
 }
