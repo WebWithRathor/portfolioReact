@@ -1,9 +1,10 @@
 import React from 'react'
+import Heading from './partials/Heading'
 
 const ProjectPage = () => {
   return (
-    <div className="projectpage px-20 pl-32 shrink-0 flex h-full">
-    <h1 className='text-9xl font-[Melodrama] font-medium pt-8 mr-20 text-[#6968B5]'>Projects</h1>
+    <div className="page px-20 bg-gradient-to-b from-[#EDE9C9] to-white pl-32 shrink-0 flex h-full">
+        <Heading head={'Projects'} mt={12}/>
     <div className="items flex">
         <div className="project relative z-0 after:absolute after:h-full after:w-full after:bg-[#6968B5] after:bottom-0 after:z-[-1] after:scale-y-0 hover:after:scale-y-100 after:origin-bottom after:transition-transform before:duration-200 hover:text-white transition-all cursor-pointer h-full w-[9vw] flex flex-col items-center justify-center border-x border-black/[.2] font-semibold">
             <h1 className='mt-20'>TAILWIND</h1>

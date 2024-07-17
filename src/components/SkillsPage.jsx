@@ -1,10 +1,11 @@
 import React from 'react'
+import Heading from './partials/Heading'
 
 const SkillsPage = () => {
     return (
-        <div className="skillpage pl-10 px-20 shrink-0 flex h-full">
-            <h1 className='text-9xl font-[Melodrama] font-medium pb-7 mt-auto mr-24 text-[#6968B5]'>Skills</h1>
-            <div className="skills flex w-[65vw] gap-5 flex-wrap py-12">
+        <div className="page pl-10 py-12 px-20 shrink-0 flex h-full bg-gradient-to-b from-[#EDE9C9] to-white">
+            <Heading head={'Skills'} mt={'auto'}/>
+            <div className="skills flex w-[65vw] gap-5 flex-wrap">
                 <div className="skill flex-1  rounded-3xl p-10  shrink-0  bg-gradient-to-t from-[#CDC7E5] via-transparent to-transparent">
                     <h1 className='text-5xl'>Backend Technologies</h1>
                     <div className="flex gap-5 mt-5">
