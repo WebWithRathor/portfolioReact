@@ -1,5 +1,5 @@
 import React from 'react'
-import InfiniteBar from './InfiniteBar'
+import InfiniteBar from './partials/InfiniteBar'
 import video from '../assets/Devraj rathor portfolio.png'
 import gsap from 'gsap'
 import { motion, useMotionValue, useSpring } from "framer-motion"
@@ -14,7 +14,7 @@ const AboutPage = ({ X }) => {
     return (
         <>
             <div className="px-32 page shrink-0 flex relative z-0 bg-gradient-to-b from-[#EDE9C9] to-white">
-                <InfiniteBar />
+                <InfiniteBar text={'About Me'} height={'60vh'} rotate={'6deg'} />
                 <h1 className='text-9xl ml-32 font-medium pt-72 leading-[7rem] w-max shrink-0'>Hi !
                     <motion.div
                         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
