@@ -9,6 +9,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { motion, useScroll } from 'framer-motion'
 import ContactUs from './ContactUs'
+import Education from './Education'
 
 const Home = () => {
 
@@ -20,7 +21,7 @@ const Home = () => {
 
   useGSAP(() => {
     gsap.to('.page', {
-      translateX: "-400vw",
+      translateX: "-520vw",
       ease: 'linear',
       duration: 30,
       scrollTrigger:{
@@ -36,10 +37,12 @@ const Home = () => {
   }, [])
   return (
     <div ref={main} className="main scrollbar-none h-screen relative">
+      
       <div className='flex parent font-[ClashDisplay] h-screen  overflow-hidden items-center text-zinc-700 '>
         <Nav />
         <Homepage />
         <AboutPage/>
+        <Education/>
         <SkillsPage />
         <ProjectPage />
         <ContactUs/>
