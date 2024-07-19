@@ -15,3 +15,62 @@
     font-family: ClashDisplay;
     src: url('./assets/fonts/ClashDisplay-Variable.ttf');
 }
+
+
+
+.cube{
+    transform-style: preserve-3d;
+    transform: rotate(0deg) rotateX(10deg) rotateY(-10deg);
+}
+
+
+
+.cube div:nth-child(1){
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+/* bottom */
+/* top */
+.cube div:nth-last-child(1){
+    background-color: #6966b550;
+    transform: translateZ(-160px) rotateX(90deg);
+    transform-origin: top;
+}
+/* left */
+.cube div:nth-child(2){
+    background-color: #6966b5d6;
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+/* right */
+.cube div:nth-child(3){
+    background-color: #6966b588;
+    transform-origin: left;
+    transform: translateZ(-160px) rotateY(90deg);
+    transform-origin: right;
+}
+/* back */
+.cube div:nth-child(4){
+    background-color: #6966b587;
+    transform: translateZ(-160px);
+    transform-origin: right;
+}
+/* top */
+.cube div:nth-child(5){
+    background-color: #6966b5b8;
+    transform-origin: bottom;
+}
+
+.cube img{
+    
+    transform: translateZ(-80px);
+    
+}
+.cube:hover div:nth-child(5){
+    background-color: transparent;
+}
+
+.cube:hover img {
+    scale: 1.2;
+}
