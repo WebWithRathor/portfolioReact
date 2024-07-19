@@ -21,7 +21,7 @@ const AboutPage = ({ X }) => {
                         drag dragTransition={{ bounceStiffness: 500, bounceDamping: 20 }}
                         style={{ x }} className='text-4xl inline-block tracking-wide ml-3'> I'm  FullStack Devloper</motion.div>
                 </h1>
-                <div className="box flex items-center absolute w-80 right-14 top-48 justify-center">
+                <div className="box flex items-center absolute w-80 right-0 top-48 justify-center">
                     <img className='h-80 mix-blend-darken absolute shrink-0  animate-[spin_15s_linear_infinite]' src={video} alt="" />
                     <i className="fa-solid fa-code text-4xl"></i>
                 </div>
