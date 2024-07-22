@@ -26,7 +26,12 @@ const AboutPage = ({ X }) => {
                     <i className="fa-solid fa-code text-4xl"></i>
                 </div>
 
-                <p className='pointer-events-none pt-[60vh] w-[50vw] shrink-0 -ml-80 text-xl  tracking-wider leading-8 ' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, aliquid inventore! Cumque quos modi, unde non eius obcaecati possimus error doloremque tempore provident nisi, nostrum, eligendi dolore corrupti saepe commodi sint illum ullam consequatur ipsum ab culpa deserunt facere. Ea.</p>
+                <p className='pointer-events-none pt-[60vh] w-[50vw] shrink-0 -ml-80 text-xl  tracking-wider leading-8 ' > A passionate Bachelor of Technology (BTech) student in Computer
+ Science and Engineering (CSE) and full-stack MERN web developer,
+ proficient in Next.js and Figma. Skilled in creating dynamic and
+ responsive applications using modern web technologies. Continuously
+ improving skills in Figma for enhanced design capabilities. Eager to
+ innovate and excel in the tech industry.</p>
             </div>
         </>
     )
