@@ -7,7 +7,7 @@ const Heading = ({ head,mt,mb ,mr }) => {
     return (
             <motion.h1 dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                 drag dragTransition={{ bounceStiffness: 500, bounceDamping: 20 }}
-                style={{ x }} className={`text-9xl w-max font-[Melodrama] font-medium mb-${mb} mr-${mr ? '' : '24'} text-[#6968B5] mt-${mt}`}>{head}</motion.h1>
+                style={{ x  }} className={`text-9xl w-max font-[Melodrama] font-medium mb-${mb} mr-${mr ? '' : '24'} text-[#6968B5]`}>{head}</motion.h1>
 
     )
 }
