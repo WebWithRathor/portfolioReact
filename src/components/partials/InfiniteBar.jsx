@@ -6,7 +6,6 @@ const InfiniteBar = ({ text, height, dir, rotate }) => {
 
     const [currentScroll, setCurrentScroll] = useState(window.scrollY);
     const [scrollDirection, setScrollDirection] = useState(null);
-
     useEffect(() => {
         const handleScroll = () => {
             const newScroll = window.scrollY;
@@ -14,6 +13,7 @@ const InfiniteBar = ({ text, height, dir, rotate }) => {
             if (newDirection !== scrollDirection) {
                 setScrollDirection(newDirection);
             }
+            console.log(setScrollDirection);
             setCurrentScroll(newScroll);
         };
         window.addEventListener('scroll', handleScroll);
