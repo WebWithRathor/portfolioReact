@@ -19,49 +19,141 @@ const Home = () => {
   gsap.registerPlugin(ScrollTrigger)
 
   useGSAP(() => {
-    gsap.timeline({
-      scrollTrigger:{
-        scroller:"body",
-        trigger: ".main",
-        start: "top 0%",
-        end: "top -200%",
-        pin:true,
-        scrub:2
-      }
-    })
-    .to('.page', {
-      translateX: "-263vw",
-      ease: 'linear',
-      duration: 30,
-    })
-    .to('.cube-container',{
-      top:'-250%',
-      ease:  "linear",
-      duration:30,
-    },"skill")   
-    .from('.skillpage span',{
-      opacity:0,
-      stagger:.2,
-      duration:25,
-      ease:  "linear",
-    },"skill")   
-    .to('.page', {
-      translateX: "-516vw",
-      ease: 'linear',
-      duration: 30,
-    })
+    if(window.innerWidth > 700){
+      gsap.timeline({
+        scrollTrigger:{
+          scroller:"body",
+          trigger: ".main",
+          start: "top 0%",
+          end: "top -200%",
+          pin:true,
+          scrub:2
+        }
+      })
+      .to('.page', {
+        translateX: "-20vw",
+        ease: 'linear',
+        duration: 5,
+      })
+      .from('.aboutpage .infinite', {
+        scale:0.7,
+        x:30,
+        opacity:0,
+        duration:5,
+        ease: 'linear',
+      },'about')
+      .to('.page', {
+        translateX: "-50vw",
+        ease: 'linear',
+        duration: 5,
+      },'about')
+      .from('.aboutpage>h1 , .aboutpage p', {
+        y:50,
+        opacity:0,
+        duration:5
+      },'aboutp')
+      .to('.page', {
+        translateX: "-120vw",
+        ease: 'linear',
+        duration: 10,
+      },'aboutp')
+      .to('.page', {
+        translateX: "-150vw",
+        ease: 'linear',
+        duration: 10,
+      },'aboutimg')
+      .from('.aboutpage img, .aboutpage i', {
+        scale:0,
+        opacity:0,
+        duration: 10,
+      },'aboutimg')
+      .to('.page', {
+        translateX: "-183vw",
+        ease: 'linear',
+        duration: 5,
+      },"edu")
+      .from('.educationpage .infinite', {
+        scale:.7,
+        opacity:0,
+        duration: 5,
+      },"edu")
+      .to('.page', {
+        translateX: "-200vw",
+        ease: 'linear',
+        duration: 5,
+      },"edu3")
+      .from('.educationpage>.text-xl', {
+        x:50,
+        opacity:0,
+        duration: 5,
+      },"edu3")
+      .to('.page', {
+        translateX: "-233vw",
+        ease: 'linear',
+        duration: 10,
+      })
+      .to('.page', {
+        translateX: "-263vw",
+        ease: 'linear',
+        duration: 5,
+      },'sk')
+      .from('.skillpage>h1',{
+        opacity:0,
+        scale:0,
+        duration:5
+      },'sk')   
+      .to('.cube-container',{
+        top:'-250%',
+        ease:  "linear",
+        duration:30,
+      },"skill")   
+      .from('.skillpage span',{
+        opacity:0,
+        stagger:.2,
+        duration:25,
+        ease:  "linear",
+      },"skill")  
+      
+      
+
+      .from('.projectpage>.mt-10 h1', {
+        scale:0,
+        opacity:0,
+        ease: 'linear',
+        duration: 10,
+      },'project')
+      .to('.page', {
+        translateX: "-330vw",
+        ease: 'linear',
+        duration: 10,
+      },'project')
+      .to('.page', {
+        translateX: "-480vw",
+        ease: 'linear',
+        duration: 25,
+      })
+      .to('.page', {
+        translateX: "-516vw",
+        ease: 'linear',
+        duration: 5,
+      },'contact')
+      .from('.contactpage h1,.contactpage .email',{
+        y:40,
+        opacity:0,
+        ease: 'linear',
+        duration: 3,
+      },'contact')
+    }
 
   }, [])
 
-  const [moveX, setmoveX] = useState(0)
-  const [moveY, setmoveY] = useState(0)
+
 
 
   return (
     <div ref={main} className="main scrollbar-none h-screen relative">
       
-      <div onMouseMove={(e)=>{setmoveX(e.clientX);setmoveY(e.clientY)}}  className='flex parent font-[ClashDisplay] h-screen  overflow-hidden items-center text-zinc-700 '>
-        <motion.div style={{top:moveY,left:moveX}} className="curs pointer-events-none -translate-x-1/2 -translate-y-1/2 absolute z-[999] h-4 aspect-square bg-[#6866b5] rounded-full"></motion.div>
+      <div  className='flex md:flex-row flex-col parent font-[ClashDisplay] md:h-screen  overflow-hidden items-center text-zinc-700 '>
         <Nav />
         <Homepage  />
         <AboutPage />
