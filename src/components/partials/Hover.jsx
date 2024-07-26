@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-const Hover = ({ str }) => {
+const Hover = ({ str,size,lead }) => {
     return (
         <motion.div
-            className='text-[#6968B5] overflow-hidden text-[8vw] mb-3 font-[Melodrama] ml-6 font-semibold inline-block relative h-max leading-[10vw]'
+        style={{fontSize : size , lineHeight : lead}}
+            className='text-[#6968B5] overflow-hidden mb-3 font-[Melodrama] ml-6 font-semibold inline-block relative h-max'
             initial="initials"
             whileHover="hovered"
             transition={{staggerChildren:'.1'}}
