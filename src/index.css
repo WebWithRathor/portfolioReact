@@ -16,6 +16,11 @@
     src: url('./assets/fonts/ClashDisplay-Variable.ttf');
 }
 
+::selection{
+    background: #6866b5;
+    color: white;
+}
+
 
 
 .cube{

@@ -1,9 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Heading from './partials/Heading'
 import Cube from './3dShapes/Cube'
+import { useLocation } from 'react-router-dom';
+import Nav from './Nav';
 
 const SkillsPage = () => {
     const page = useRef(null);
+    const {pathname} = useLocation()
+    const personalRoute = pathname.split('/')[1] != '';
     const [rotateX, setRotateX] = useState(-10)
     const [rotateY, setRotateY] = useState(-10)
     const threeRotate = function (e, elem) {
@@ -13,10 +17,11 @@ const SkillsPage = () => {
 
 
     return (
-        <div ref={page} onMouseMove={e => threeRotate(e)} className="page skillpage pl-10 relative py-12 px-20 shrink-0 flex flex-col w-screen items-center justify-center h-full bg-gradient-to-b from-[#EDE9C9] to-white">
+        <div id='Skill' ref={page} onMouseMove={e => threeRotate(e)} className="page skillpage font-[clashDisplay] min-h-screen   relative py-12 px-5 md:px-20 shrink-0 flex flex-col w-screen items-center justify-center h-full bg-gradient-to-l md:bg-gradient-to-b from-[#EDE9C9] to-white">
+            {personalRoute ? <Nav/> : ''}
             <Heading head={'Skills'} mt={'auto'} />
-            <p className='w-[70%] text-center text-xl leading-8 '><span  className='mx-2'>Infinite Scroll</span><span>|</span><span className='mx-2'>Nodemailer</span><span>|</span><span className='mx-2'>Razorpay</span><span>|</span><span className='mx-2'>Framer Motion</span><span>|</span><span className='mx-2'>GSAP</span><span>|</span><span className='mx-2'>ScrollTrigger</span><span>|</span><span className='mx-2'>Locomotive.js</span><span>|</span><span className='mx-2'>Context API</span><span>|</span><span className='mx-2'>API Integration</span><span>|</span><span className='mx-2'>AJAX</span><span>|</span><span className='mx-2'>Mobile-first Design principle</span><span>|</span><span className='mx-2'>Intermediate debugging</span><span>|</span><span className='mx-2'>Effective communication</span><span>|</span><span className='mx-2'>Teamwork</span><span>|</span><span className='mx-2'>Quick learner</span><span>|</span><span className='mx-2'>Adaptable to new technologies</span><span>|</span><span className='mx-2'>Swiper JS</span><span>|</span><span className='mx-2'>react-router-dom</span><span>|</span><span className='mx-2'>Textilate Js</span><span>|</span><span className='mx-2'>EJS</span></p>
-            <div className="w-full cube-container h-screen top-full absolute">
+            <p className=' w-full flex flex-wrap justify-center md:w-[70%] text-center text-xl leading-8 '><span  className='mx-2'>Infinite Scroll</span><span>|</span><span className='mx-2'>Nodemailer</span><span>|</span><span className='mx-2'>Razorpay</span><span>|</span><span className='mx-2'>Framer Motion</span><span>|</span><span className='mx-2'>GSAP</span><span>|</span><span className='mx-2'>ScrollTrigger</span><span>|</span><span className='mx-2'>Locomotive.js</span><span>|</span><span className='mx-2'>Context API</span><span>|</span><span className='mx-2'>API Integration</span><span>|</span><span className='mx-2'>AJAX</span><span>|</span><span className='mx-2'>Mobile-first Design principle</span><span>|</span><span className='mx-2'>Intermediate debugging</span><span>|</span><span className='mx-2'>Effective communication</span><span>|</span><span className='mx-2'>Teamwork</span><span>|</span><span className='mx-2'>Quick learner</span><span>|</span><span className='mx-2'>Adaptable to new technologies</span><span>|</span><span className='mx-2'>Swiper JS</span><span>|</span><span className='mx-2'>react-router-dom</span><span>|</span><span className='mx-2'>Textilate Js</span><span>|</span><span className='mx-2'>EJS</span></p>
+            <div className="w-full md:inline-block my-32 md:mt-0 flex justify-center px-5 flex-wrap gap-24 gap-y-28 cube-container min-h-screen md:h-screen top-full md:absolute">
                 <Cube top={'12%'} rotateX={rotateX} alt={'nodejs logo'} img={'https://skillicons.dev/icons?i=nodejs'} rotateY={rotateY} left={"10%"} />
                 <Cube top={'43%'} rotateX={rotateX} alt={'express logo'} img={'https://skillicons.dev/icons?i=express'} rotateY={rotateY} left={"25%"} />
                 <Cube top={'75%'} rotateX={rotateX} alt={'postman logo'} img={'https://cdn.simpleicons.org/postman/FF6C37'} rotateY={rotateY} left={"10%"} />
@@ -36,7 +41,6 @@ const SkillsPage = () => {
                 <Cube top={'243%'} rotateX={rotateX} alt={'googleCloud logo'} img={'https://skillicons.dev/icons?i=gcp'} rotateY={rotateY} left={"25%"} />
                 <Cube top={'275%'} rotateX={rotateX} alt={'VsCode logo'} img={'https://skillicons.dev/icons?i=vscode'} rotateY={rotateY} left={"10%"} />
                 <Cube top={'280%'} rotateX={rotateX} alt={'Github logo'} img={'https://skillicons.dev/icons?i=github'} rotateY={rotateY} left={"75%"} />
-                <Cube top={'230%'} rotateX={rotateX} alt={'Figma logo'} img={'https://skillicons.dev/icons?i=figma'} rotateY={rotateY} left={"82%"} />
                 <Cube top={'230%'} rotateX={rotateX} alt={'Figma logo'} img={'https://skillicons.dev/icons?i=figma'} rotateY={rotateY} left={"82%"} />
 
             </div>
