@@ -10,13 +10,20 @@ import { useGSAP } from '@gsap/react'
 import { easeIn, motion, useScroll } from 'framer-motion'
 import ContactUs from './ContactUs'
 import Education from './Education'
+import Cursor from './partials/Cursor'
+import Intro from './Intro'
 
 const Home = () => {
 
   const main = useRef(null)
+  const [x, setx] = useState(0)
+  const [y, sety] = useState(0)
   
 
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger);
+
+
+ 
 
   useGSAP(() => {
     if(window.innerWidth > 700){
@@ -128,32 +135,52 @@ const Home = () => {
         duration: 10,
       },'project')
       .to('.page', {
-        translateX: "-480vw",
+        translateX: "-460vw",
         ease: 'linear',
         duration: 25,
       })
       .to('.page', {
-        translateX: "-516vw",
+        translateX: "-490vw",
         ease: 'linear',
         duration: 5,
       },'contact')
+      .from('.contactpage .left',{
+        y:40,
+        opacity:0,
+        ease: 'linear',
+        duration: 5,
+      },'contact')
+
+      .to('.page', {
+        translateX: "-516vw",
+        ease: 'linear',
+        duration: 5,
+      },'contact1')
       .from('.contactpage h1,.contactpage .email',{
         y:40,
         opacity:0,
         ease: 'linear',
         duration: 3,
-      },'contact')
+      },'contact1')
     }
 
   }, [])
 
+  useEffect(()=>{
+    main.current.addEventListener('mousemove',(e)=>{
+      setx((e.clientX / window.innerWidth) * 100 )
+      sety((e.clientY / window.innerHeight) * 100)
+    })
+      
+  },[])
 
 
 
   return (
     <div ref={main} className="main scrollbar-none h-screen relative">
-      
+      {/* <Intro/> */}
       <div  className='flex md:flex-row flex-col parent font-[ClashDisplay] md:h-screen  overflow-hidden items-center text-zinc-700 '>
+        <Cursor x={x} y={y} />
         <Nav />
         <Homepage  />
         <AboutPage />
