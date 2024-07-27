@@ -24,7 +24,7 @@ const InfiniteBar = ({ text, height, dir, rotate }) => {
 
 
     return (
-        <div style={{ rotate: `${rotate}` }} className={`infinite scrollbar-none shrink-0 flex flex-col w-[10vw] mx-10   bg-[#7776bc] text-[#fffbdb] overflow-hidden justify-center items-center h-[110vh] `}>
+        <div style={{ rotate: `${rotate}` }} className={`infinite hidden md:flex scrollbar-none shrink-0  flex-col w-[10vw] mx-10   bg-[#7776bc] text-[#fffbdb] overflow-hidden justify-center items-center h-[110vh] `}>
             <motion.h1 style={{ height: `${height}` }} initial={{rotate:'-90deg'}} animate={{ translateY: `${scrollDirection === 'up' ? '-100%' : '100%'}` }} transition={{ duration: 5, repeat: Infinity, ease: "linear" }} className={`uppercase transition-transform ease-linear pointer-events-none shrink-0 font-[Melodrama] text-8xl w-max text-center justify-center rotate-[-90deg] items-center flex flex-col px-7 `}>
                 {text}
             </motion.h1>
