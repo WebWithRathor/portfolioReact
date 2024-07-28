@@ -17,7 +17,7 @@ const Cube = ({ top, left, rotateX, rotateY, img, alt }) => {
                 <div className="right absolute md:h-40 h-32 aspect-square "></div>
                 <div className="back absolute md:h-40 h-32 aspect-square "></div>
                 <div className="bottom absolute md:h-40 h-32 aspect-square "></div>
-                <div className="md:h-40 h-32 aspect-square absolute shadow-[0px_0px_50px_10px_#6866B5] shadowcube"></div>
+                <div className="md:h-40 h-32 aspect-square absolute shadow-[0px_0px_30px_5px_#9d9cc9] shadowcube"></div>
                 <div className="left absolute md:h-40 h-32 aspect-square "></div>
             </div>
         </>

@@ -5,7 +5,7 @@ const Hover = ({ str,size,lead }) => {
     return (
         <motion.div
         style={{fontSize : size , lineHeight : lead}}
-            className='text-[#6968B5] overflow-hidden  mb-3 font-[Melodrama] ml-6 font-semibold hidden md:inline-block relative h-max'
+            className='text-[#9d9cc9] overflow-hidden  mb-3 font-[Melodrama] ml-6 font-semibold hidden md:inline-block relative h-max'
             initial="initials"
             whileHover="hovered"
         >

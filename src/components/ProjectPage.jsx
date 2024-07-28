@@ -54,7 +54,7 @@ const ProjectPage = () => {
     },[pages])
 
     return (
-        <div id='Projects' className={`page font-[clashDisplay] projectpage md:px-20 ${personalRoute ? 'md:pl-32' : ' '} md:w-max bg-gradient-to-l md:bg-gradient-to-b from-[#EDE9C9] to-white shrink-0 flex md:flex-row flex-col h-full min-h-screen`}>
+        <div id='Projects' className={`page font-[clashDisplay] projectpage md:px-20 ${personalRoute ? 'md:pl-32' : ' '} md:w-max  shrink-0 flex md:flex-row flex-col h-full min-h-screen`}>
             {personalRoute ? <Nav/> : ' '}
             <div className="mt-10 md:scale-100 scale-75">
                 <Heading head={'Projects'} />
