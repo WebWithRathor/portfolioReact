@@ -17,10 +17,10 @@ const Homepage = () => {
 
 
     return (
-        <div id='Home' onMouseMove={(e) => eyes(e)} className="page homepage shrink-0 p-10 z-0 flex md:flex-col flex-col-reverse  relative h-full w-screen bg-gradient-to-l md:bg-gradient-to-b from-[#EDE9C9] to-white">
+        <div id='Home' onMouseMove={(e) => eyes(e)} className="page homepage shrink-0 p-10 z-0 flex md:flex-col flex-col-reverse  relative h-full w-screen ">
             <div className="">
                 <p className='ml-auto md:w-1/2 font-[ClashDisplay] text-lg tracking-wider text-right'>As a second-year B.Tech student specializing in MERN stack and proficient in C language, I excel in both front-end and back-end development. Passionate about coding, I create dynamic, responsive web applications and thrive in collaborative projects, continuously learning to deliver innovative and impactful solutions.</p>
-                <h1><a href={resume} download='DevrajResume.pdf' className="ml-auto block w-max px-5 rounded-md text-[#fcfbec] font-medium text-xl mt-4 py-3 hover:bg-transparent hover:border-[#6968B5] border border-transparent transition-all hover:text-[#6866B5] bg-[#6968B5]">Get Resume</a></h1>
+                <h1><a href={resume} download='DevrajResume.pdf' className="ml-auto block w-max px-5 rounded-md text-[#fcfbec] font-medium text-xl mt-4 py-3 hover:bg-transparent hover:border-[#6968B5] border border-transparent transition-all hover:text-[#9d9cc9] bg-[#6968B5]">Get Resume</a></h1>
             </div>
             <h1 className='md:absolute top-[96%]  md:-translate-y-full flex md:flex-row flex-col md:items-center md:mt-0 mt-5 mb-10 md:mb-0 text-5xl md:text-[8vw] leading-none font-medium font-[ClashDisplay]'>DEVRAJ
                 <span className='ml-24 md:hidden'>RATHOR</span>
