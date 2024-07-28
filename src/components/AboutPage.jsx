@@ -13,7 +13,7 @@ const AboutPage = ({ X }) => {
 
     return (
         <>
-            <div className="md:px-32 page aboutpage shrink-0 flex md:flex-row flex-col relative z-0 overflow-hidden bg-gradient-to-l md:bg-gradient-to-b from-[#EDE9C9] to-white">
+            <div className="md:px-32 page aboutpage shrink-0 flex md:flex-row flex-col relative z-0 overflow-hidden ">
                 <InfiniteBar text={'About Me'} height={'60vh'} rotate={'6deg'} />
                 <h1 className=' text-7xl py-10 ml-10 md:text-9xl md:ml-32 font-medium md:pt-72 md:leading-[7rem] md:flex gap-14 w-max shrink-0'>Hi !<div className="scale-75 -ml-12 md:scale-100 md:ml-0x`">
                         <motion.div

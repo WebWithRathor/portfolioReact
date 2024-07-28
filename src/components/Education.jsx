@@ -4,7 +4,7 @@ import Heading from './partials/Heading'
 
 const Education = () => {
   return (
-    <div id='Education' className='page educationpage px-10 md:pl-10 md:pr-32 shrink-0 md:w-max w-screen  flex md:flex-row flex-col relative items-end z-0 bg-gradient-to-l md:bg-gradient-to-b from-[#EDE9C9] to-white'>
+    <div id='Education' className='page educationpage px-10 md:pl-10 md:pr-32 shrink-0 md:w-max w-screen  flex md:flex-row flex-col relative items-end z-0 '>
         <InfiniteBar text={' Education '} rotate={'6deg'} dir={'top'} height={'65vh'}/>
         <div className="text-xl pt-10 md:pb-10 ">
             <h1 className=' font-medium text-4xl'>School</h1>
