@@ -95,7 +95,7 @@ const ProjectPage = () => {
                         <h1 className='text-lg tracking-wide'>Clone(FullStack)</h1>
                     </div>
                 </div></a>
-                <a href='https://github.com/WebWithRathor/Youtube-clone.git' ><div ref={pushref} className=" after:duration-200 before:duration-200 project relative z-0 after:absolute after:h-full after:w-full after:bg-[#6968B5] after:bottom-0 after:z-[-1] after:scale-y-0 hover:after:scale-y-100 after:origin-bottom after:transition-transform before:duration-200 hover:text-white transition-all cursor-pointer md:h-full md:w-[10vw] w-full h-[13vh] flex flex-col items-center justify-center border-b md:border-r border-black/[.2] font-medium">
+                <a href='https://github.com/WebWithRathor/Youtube-clone.git' ><div ref={pushref} className=" after:duration-200 before:duration-200 project relative z-0 after:absolute after:h-full after:w-full after:bg-[#6968B5] after:bottom-0 after:z-[-1] after:scale-y-0 hover:after:scale-y-100 after:origin-bottom after:transition-transform hover:text-white transition-all cursor-pointer md:h-full md:w-[10vw] w-full h-[13vh] flex flex-col items-center justify-center border-b md:border-r border-black/[.2] font-medium">
                     <div className="image scale-50 rounded z-[9999] overflow-hidden opacity-0 md:h-[20vh] md:w-[15vw] h-[30vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none absolute left-0 "><img className='h-full w-full object-cover' src={Yt} alt="" /></div>
                     <div className=" text-center md:-rotate-90 pointer-events-none">
                         <h1 className='text-xl mb-1 tracking-wide'>Mini Youtube</h1>

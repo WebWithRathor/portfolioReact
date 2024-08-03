@@ -179,7 +179,7 @@ const Home = () => {
   return (
     <div ref={main} className="main scrollbar-none h-screen relative">
       {/* <Intro/> */}
-      <div  className='flex md:flex-row flex-col parent font-[ClashDisplay] md:h-screen  overflow-hidden items-center text-white bg-black '>
+      <div  className='flex md:flex-row flex-col parent font-[ClashDisplay] md:h-screen  overflow-hidden items-center text-white bg-black/[.9] '>
         <Cursor x={x} y={y} />
         <Nav />
         <Homepage  />
